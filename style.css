@@ -1,0 +1,301 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  /* Font */
+  --font-family: "Segoe UI", sans-serif;
+  --font-size: 1.5rem;
+  --font-size-xl: 3rem;
+
+  /* Web Colors */
+  --eduvos-coding-club-primary-color: #1ba9e1;
+  --eduvos-coding-club-secondary-color: #000942;
+  --text-color: wheat;
+
+  /* Web Images */
+  --eduvos-coding-club-logo: url(img/coding-club-logo-reduced.png);
+  --eduvos-club-logo-full: url(img/coding-club-logo-full.png);
+
+  --hero-card: url(img/photo.png);
+
+  --event-card-1: ;
+  --event-card-2: ;
+  --event-card-3: ;
+
+  --project-card-1: ;
+  --project-card-2: ;
+  --project-card-3: ;
+
+  --about-us-card-1: ;
+  --about-us-card-2: ;
+  --about-us-card-3: ;
+
+  --instagram-logo: ;
+  --linkedin-logo: ;
+  --github-logo: ;
+  --tiktok-logo: ;
+}
+
+/* Utility Classes */
+.nowrap {
+  white-space: nowrap;
+}
+
+html {
+  scroll-behavior: smooth;
+  min-height: 200vh;
+  background-color: #000942;
+  font-family: var(--font-family);
+}
+
+/* Navigation */
+
+nav {
+  background-color: var(--eduvos-coding-club-secondary-color);
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 1rem;
+  font-weight: bolder;
+
+  position: fixed;
+  top: 0;
+  z-index: 1400;
+  width: 80%;
+  margin-left: 10%;
+  height: 3rem;
+
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+a:link,
+a:visited {
+  text-decoration: dotted;
+  color: var(--text-color);
+}
+
+.club-logo-reduced {
+  background: var(--eduvos-coding-club-logo) center no-repeat;
+  background-size: contain;
+  margin-top: -0.3rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: block;
+}
+
+.club-logo-full {
+  background: var(--eduvos-club-logo-full) center no-repeat;
+  background-size: contain;
+  margin-top: 0rem;
+  width: 7rem;
+  height: 7rem;
+  display: block;
+  justify-self: center;
+}
+
+/* General Styles*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  width: 100%;
+  height: 55vh;
+  text-align: center;
+  background-color: var(--eduvos-coding-club-secondary-color);
+  padding-right: 40%;
+  padding-top: 6rem;
+  color: var(--text-color);
+  background: var(--hero-card) no-repeat right;
+  background-size: contain;
+}
+.hero p {
+  margin-top: -1.2rem;
+}
+
+.container {
+  margin-top: -3rem;
+  margin-bottom: 0.5rem;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+}
+
+article {
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+article p {
+  margin-top: -1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.container h2 {
+  scroll-margin-top: 4rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--eduvos-coding-club-secondary-color);
+}
+.container .card:first-child img {
+  margin-top: -6rem;
+}
+
+/* || PROFILE CARD */
+.card {
+  margin-top: 0rem;
+  scroll-margin-top: 8rem;
+  width: min(100%, 350px) !important;
+  height: 80vh;
+  background-color: var(--eduvos-coding-club-secondary-color);
+  color: var(--text-color);
+  border-radius: 15px;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card figure {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+hr {
+  max-width: 90%;
+  margin-left: 5%;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  height: 50vh;
+  margin-top: -5rem;
+}
+
+.card figcaption {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.project-card {
+  padding-top: 2.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  object-fit: contain !important;
+}
+
+/* SMALL */
+@media screen and (min-width: 576px) {
+  main {
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .card {
+    width: min(100%, 400px) !important;
+    height: 90vh;
+  }
+  .card img {
+    height: 60vh;
+  }
+  .hero {
+    padding-right: 0rem !important;
+  }
+}
+
+/* MEDIUM */
+@media screen and (min-width: 768) {
+  nav {
+    display: none;
+  }
+  .card {
+    width: min(100%, 325px);
+  }
+  .card figure {
+    flex-flow: column-reverse;
+  }
+  .card figcaption {
+    margin: 0.1em 0;
+  }
+  .card p {
+    margin-top: 1rem;
+  }
+}
+
+/* LARGE */
+@media screen and (min-width: 992px) {
+  .card {
+    width: min(100%, 500px);
+    .card:nth-child(2) {
+      order: -1;
+    }
+  }
+  .hero {
+    padding-top: 6rem;
+    padding-right: 0rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* XL */
+@media screen and (min-width: 1200px) {
+  .card {
+    width: min(calc(33%-1rem), 500px);
+  }
+}
+
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  nav {
+    display: none;
+  }
+  main {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+  .card {
+    width: min(calc(33%-0.25rem), 200px);
+  }
+  .card figcaption,
+  .card p {
+    font-size: 1.25rem;
+  }
+}

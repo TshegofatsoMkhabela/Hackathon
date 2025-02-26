@@ -109,7 +109,6 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-
   flex-grow: 1;
 }
 
@@ -123,8 +122,8 @@ body {
   height: 55vh;
   text-align: center;
   background-color: var(--eduvos-coding-club-secondary-color);
+  padding-right: 40%;
   padding-top: 6rem;
-  padding-right: 12rem;
   color: var(--text-color);
   background: var(--hero-card) no-repeat right;
   background-size: contain;
@@ -135,11 +134,11 @@ body {
 
 .container {
   margin-top: -3rem;
-  margin-bottom: -3rem;
+  margin-bottom: 0.5rem;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   background-color: white;
-  height: 95vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -148,7 +147,9 @@ article {
   text-align: center;
   padding: 1rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
 }
 article p {
@@ -157,18 +158,22 @@ article p {
   padding-right: 0.5rem;
 }
 .container h2 {
+  scroll-margin-top: 4rem;
   margin-top: 0.5rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--eduvos-coding-club-secondary-color);
+}
+.container .card:first-child img {
+  margin-top: -6rem;
 }
 
 /* || PROFILE CARD */
 .card {
   margin-top: 0rem;
   scroll-margin-top: 8rem;
-  width: min(100%, 350px);
-  height: 70vh;
+  width: min(100%, 350px) !important;
+  height: 80vh;
   background-color: var(--eduvos-coding-club-secondary-color);
   color: var(--text-color);
   border-radius: 15px;
@@ -176,6 +181,7 @@ article p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .card figure {
@@ -194,7 +200,8 @@ hr {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
-  height: 30vh;
+  height: 50vh;
+  margin-top: -5rem;
 }
 
 .card figcaption {
@@ -205,19 +212,28 @@ hr {
 }
 
 .project-card {
-  margin-top: 0.5rem;
+  padding-top: 2.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   object-fit: contain !important;
 }
+
 /* SMALL */
 @media screen and (min-width: 576px) {
   main {
     justify-content: center;
     flex-flow: row wrap;
   }
+
   .card {
-    width: min(100%, 400px);
+    width: min(100%, 400px) !important;
+    height: 90vh;
+  }
+  .card img {
+    height: 60vh;
+  }
+  .hero {
+    padding-right: 0rem !important;
   }
 }
 
@@ -247,6 +263,11 @@ hr {
     .card:nth-child(2) {
       order: -1;
     }
+  }
+  .hero {
+    padding-top: 6rem;
+    padding-right: 0rem;
+    font-size: 1.5rem;
   }
 }
 

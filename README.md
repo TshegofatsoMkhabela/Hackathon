@@ -7,9 +7,9 @@
 - Lethabo Ntlele  EDUV4955635
 - Oyama Wolsak  EDUV9048609
 
-**Outline**
-
 Goal of this website is to create a thriving platform that attracts Club Members and Sponsors to grow the club.
+
+**Outline**
 
 **A Home page featuring**
 - Navigation bar that sticks to the top with easy access to:

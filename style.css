@@ -1,0 +1,476 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ROOT VARIABLES */
+:root {
+  /* Font */
+  --font-family: "Segoe UI", sans-serif;
+  --font-size: 1.5rem;
+  --font-size-xl: 3rem;
+
+  /* Web Colors */
+  --eduvos-coding-club-primary-color: #1ba9e1;
+  --eduvos-coding-club-secondary-color: #000942;
+  --text-color: wheat;
+
+  /* Web Images */
+  --eduvos-coding-club-logo: url(img/coding-club-logo-reduced.png);
+  --eduvos-club-logo-full: url(img/coding-club-logo-full.png);
+
+  --hero-card: url(img/photo.png);
+
+  --contact-hero: url(img/banner-4.jpg);
+
+  --instagram-logo: ;
+  --linkedin-logo: ;
+  --github-logo: ;
+  --tiktok-logo: ;
+}
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+  min-height: 200vh;
+  background-color: white;
+  font-family: var(--font-family);
+}
+
+/* Utility Classes */
+.nowrap {
+  white-space: nowrap;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1400;
+
+  width: 80%;
+  height: 3rem;
+  margin-left: 10%;
+  padding: 1rem;
+
+  font-weight: bolder;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  background-color: var(--eduvos-coding-club-secondary-color);
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+nav a:hover {
+  opacity: 80%;
+}
+
+a:link,
+a:visited {
+  color: var(--text-color);
+  text-decoration: dotted;
+}
+
+/* Main */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+
+/* Logos */
+.club-logo-reduced {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-top: -0.3rem;
+
+  background: var(--eduvos-coding-club-logo) center no-repeat;
+  background-size: contain;
+}
+
+.club-logo-full {
+  width: 7rem;
+  height: 7rem;
+
+  justify-self: center;
+
+  background: var(--eduvos-club-logo-full) center no-repeat;
+  background-size: contain;
+}
+
+.hero {
+  width: 100%;
+  height: 55vh;
+  padding-right: 12rem;
+  padding-top: 6rem;
+
+  color: var(--text-color);
+
+  background: var(--hero-card) no-repeat right;
+  background-size: contain;
+  background-color: var(--eduvos-coding-club-secondary-color);
+
+  text-align: center;
+}
+
+.hero p {
+  margin-top: -1.2rem;
+}
+
+.hero .button {
+  margin-top: 0rem;
+}
+
+/* Buttons */
+.button {
+  margin-top: 1.5rem;
+  padding: 5px 20px;
+  width: fit-content;
+  height: fit-content;
+
+  background-color: #000942;
+  border: wheat 1px solid;
+  border-radius: 25px;
+
+  cursor: pointer;
+  justify-self: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  color: #000942;
+  background-color: var(--text-color);
+}
+
+.larger {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+
+  font-size: 1.5rem;
+
+  border: #000942;
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  min-height: 110vh;
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+}
+
+.rounded-top-radius {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/* Articles */
+article {
+  padding: 0rem;
+
+  background-color: white;
+  display: flex;
+
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+
+  text-align: center;
+}
+article p {
+  margin-top: -1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: var(--text-color);
+}
+.container h2 {
+  scroll-margin-top: 3.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--eduvos-coding-club-secondary-color);
+  padding: 1rem;
+}
+.blue {
+  color: var(--eduvos-coding-club-secondary-color);
+  font-size: 1.5rem;
+  text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+.container .card:first-child img {
+  margin-top: -6rem;
+}
+.card-modifier {
+  margin-top: -3.5rem !important;
+}
+
+/* || PROFILE CARD */
+.card {
+  margin-top: 0rem;
+  scroll-margin-top: 8rem;
+  width: min(100%, 350px) !important;
+  height: 80vh;
+  background-color: var(--eduvos-coding-club-secondary-color);
+  color: var(--text-color);
+  border-radius: 15px;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card figure {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+hr {
+  max-width: 90%;
+  margin-left: 5%;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  height: 50vh;
+  margin-top: -5rem;
+}
+
+.card figcaption {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.project-card {
+  padding-top: 2.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  object-fit: contain !important;
+}
+
+.contact-hero {
+  background: var(--contact-hero) center no-repeat;
+  background-size: contain;
+  background-color: #170944;
+}
+.contact-card {
+  background-color: white;
+}
+.contact-card p,
+.contact-card a {
+  margin-top: 0rem;
+  color: #000942;
+  font-size: 1.5rem;
+}
+.container li {
+  list-style: none;
+  justify-content: center;
+  margin: 2rem;
+}
+.container li:hover {
+  text-decoration: underline;
+  color: #000942;
+}
+.link {
+  width: 5rem;
+  border: #000942;
+}
+.instagram-logo,
+.tiktok-logo,
+.github-logo,
+.linkedin-logo {
+  height: 2rem;
+  width: 8rem;
+}
+
+.instagram-logo {
+  background: url(img/instagram-logo.png) center no-repeat;
+  background-size: contain;
+  margin-top: -1rem;
+}
+.tiktok-logo {
+  background: url(img/tiktok-logo.png) center no-repeat;
+  background-size: contain;
+  margin-top: 1rem;
+}
+.github-logo {
+  background: url(img/github-alternative-logo.svg) center no-repeat;
+  background-size: contain;
+  margin-top: 1rem;
+}
+.linkedin-logo {
+  background: url(img/linkedin-logo.webp) center no-repeat;
+  background-size: contain;
+  margin-top: rem;
+}
+a:hover .instagram-logo,
+.tiktok-logo a:hover,
+.github-logo a:hover,
+.linkedin-logo a:hover {
+  text-decoration: underline;
+}
+footer {
+  height: 55vh;
+  background-color: var(--eduvos-coding-club-secondary-color);
+  color: var(--text-color);
+}
+footer p {
+  margin-top: 1rem;
+  margin-left: 5%;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+footer hr {
+  margin-bottom: 0.5rem;
+}
+footer li {
+  list-style: none;
+  margin: 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.gridded-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+  text-align: start;
+  padding-left: 6%;
+  margin-bottom: 3rem;
+}
+.underline {
+  text-decoration: underline;
+}
+.underline a:hover,
+a:hover .underline {
+  opacity: 80%;
+}
+
+/* SMALL */
+@media screen and (min-width: 576px) {
+  main {
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .card {
+    width: min(100%, 400px) !important;
+    height: 90vh;
+  }
+  .card img {
+    height: 60vh;
+  }
+  .hero {
+    padding-right: 12rem !important;
+  }
+}
+
+/* MEDIUM */
+@media screen and (min-width: 768) {
+  nav {
+    display: none;
+  }
+  .card {
+    width: min(100%, 325px);
+  }
+  .card figure {
+    flex-flow: column-reverse;
+  }
+  .card figcaption {
+    margin: 0.1em 0;
+  }
+  .card p {
+    margin-top: 1rem;
+  }
+  .hero {
+    padding-top: 6rem;
+    padding-right: 0rem !important;
+    font-size: 1.5rem;
+  }
+}
+
+/* LARGE */
+@media screen and (min-width: 992px) {
+  .card {
+    width: min(100%, 500px);
+    .card:nth-child(2) {
+      order: -1;
+    }
+  }
+  .hero {
+    padding-top: 6rem;
+    padding-right: 0rem !important;
+    font-size: 1.5rem;
+  }
+}
+
+/* XL */
+@media screen and (min-width: 1200px) {
+  .card {
+    width: min(calc(33%-1rem), 500px);
+  }
+  .hero {
+    padding-top: 6rem;
+    padding-right: 0rem !important;
+    font-size: 1.5rem;
+  }
+}
+
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  nav {
+    display: none;
+  }
+  main {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+  .card {
+    width: min(calc(33%-0.25rem), 200px);
+  }
+  .card figcaption,
+  .card p {
+    font-size: 1.25rem;
+  }
+}

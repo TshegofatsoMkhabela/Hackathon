@@ -18,11 +18,11 @@ Goal of this website is to create a thriving platform that attracts Club Members
 - An interactive join now button that directly links new members to the coding club whatsapp group
 
 **A Events section featuring**
--Upcomming events with links to a sign up form in the title for ease of access
-	try Web Dev Hackathon Title
+- Upcomming events with links to a sign up form in the title for ease of access
+	(try Web Dev Hackathon Title)
 
 **A Project section featuring**
-- Current student projects with links to github repos for people to see
+- Current student projects with links to github repos for people to see,
 	currently populated with simulated data
 
 **An About Us section featuring**
@@ -30,7 +30,7 @@ Goal of this website is to create a thriving platform that attracts Club Members
 - An Our Team section with leadership cabinet striking profiles detailing their roles
 
 **A Contact Us section featuring**
-- An impresive Coding Club styled banner with an interactive join now button and qr code
+- An impresive Coding Club styled banner with an interactive join now button and QR code
 - A meeting times section with interactive links to the club socials
 
 **A professional Footer section featuring**
@@ -39,4 +39,4 @@ Goal of this website is to create a thriving platform that attracts Club Members
 	link will send them to gmail with a prepoulated mail making it easy to gain sponors
 
 **Technologies used:**
-CSS3, HTML5, Google Gmail API
+CSS3, HTML5 and Google Gmail API

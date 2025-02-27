@@ -8,6 +8,7 @@
 - Oyama Wolsak  EDUV9048609
 
 **Outline**
+
 Goal of this website is to create a thriving platform that attracts Club Members and Sponsors to grow the club.
 
 **A Home page featuring**

@@ -1,11 +1,11 @@
 # Hacakthon
 
 **Code Crusaders**
-Oratile Lithuge  con-1596004-x8k8
-Nokwanda Angel Mbanjwa	EDUV4887122
-Tshegofatso Mkhabela  EDUV9031089
-Lethabo Ntlele  EDUV4955635
-Oyama Wolsak  EDUV9048609
+- Oratile Lithuge  con-1596004-x8k8
+- Nokwanda Angel Mbanjwa	EDUV4887122
+- Tshegofatso Mkhabela  EDUV9031089
+- Lethabo Ntlele  EDUV4955635
+- Oyama Wolsak  EDUV9048609
 
 **Outline**
 Goal of this website is to create a thriving platform that attracts Club Members and Sponsors to grow the club.

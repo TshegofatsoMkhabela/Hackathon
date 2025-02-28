@@ -1,0 +1,447 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ROOT VARIABLES */
+:root {
+  /* Font */
+  --font-family: "Segoe UI", sans-serif;
+  --font-size: 1.5rem;
+  --font-size-xl: 3rem;
+
+  /* Web Colors */
+  --eduvos-coding-club-primary-color: #1ba9e1;
+  --eduvos-coding-club-secondary-color: #000942;
+  --text-color: wheat;
+
+  /* Web Images */
+  --eduvos-coding-club-logo: url(img/coding-club-logo-reduced.png);
+  --eduvos-club-logo-full: url(img/coding-club-logo-full.png);
+
+  --hero-card: url(img/photo.png);
+
+  --contact-hero: url(img/banner-4.jpg);
+
+  --instagram-logo: ;
+  --linkedin-logo: ;
+  --github-logo: ;
+  --tiktok-logo: ;
+}
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+  min-height: 200vh;
+  background-color: white;
+  font-family: var(--font-family);
+}
+
+/* Utility Classes */
+.nowrap {
+  white-space: nowrap;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1400;
+
+  width: 80%;
+  height: 3rem;
+  margin-left: 10%;
+  padding: 1rem;
+
+  font-weight: bolder;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  background-color: var(--eduvos-coding-club-secondary-color);
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+nav a:hover {
+  opacity: 80%;
+}
+
+a:link,
+a:visited {
+  color: var(--text-color);
+  text-decoration: dotted;
+}
+
+/* Main */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+
+/* Logos */
+.club-logo-reduced {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-top: -0.3rem;
+
+  background: var(--eduvos-coding-club-logo) center no-repeat;
+  background-size: contain;
+}
+
+.club-logo-full {
+  width: 7rem;
+  height: 7rem;
+
+  justify-self: center;
+
+  background: var(--eduvos-club-logo-full) center no-repeat;
+  background-size: contain;
+}
+
+.hero {
+  width: 100%;
+  height: 55vh;
+  padding-right: 12rem;
+  padding-top: 6rem;
+
+  color: var(--text-color);
+
+  background: var(--hero-card) no-repeat right;
+  background-size: contain;
+  background-color: var(--eduvos-coding-club-secondary-color);
+
+  text-align: center;
+}
+
+.hero p {
+  margin-top: -1.2rem;
+}
+
+.hero .button {
+  margin-top: 0rem;
+}
+
+/* Buttons */
+.button {
+  margin-top: 1.5rem;
+  padding: 5px 20px;
+  width: fit-content;
+  height: fit-content;
+
+  background-color: #000942;
+  border: wheat 1px solid;
+  border-radius: 25px;
+
+  cursor: pointer;
+  justify-self: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  color: #000942;
+  background-color: var(--text-color);
+}
+
+.larger {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border: #000942;
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+}
+
+.rounded-top-radius {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+article {
+  background-color: white;
+  text-align: center;
+  padding: 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+}
+article p {
+  margin-top: -1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: var(--text-color);
+}
+.container h2 {
+  scroll-margin-top: 3.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--eduvos-coding-club-secondary-color);
+  padding: 1rem;
+}
+.blue {
+  color: var(--eduvos-coding-club-secondary-color);
+  font-size: 1.5rem;
+  text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+.container .card:first-child img {
+  margin-top: -6rem;
+}
+.card-modifier {
+  margin-top: -3.5rem !important;
+}
+
+/* || PROFILE CARD */
+.card {
+  margin-top: 0rem;
+  scroll-margin-top: 8rem;
+  width: min(100%, 350px) !important;
+  height: 80vh;
+  background-color: var(--eduvos-coding-club-secondary-color);
+  color: var(--text-color);
+  border-radius: 15px;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card figure {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+hr {
+  max-width: 90%;
+  margin-left: 5%;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  height: 50vh;
+  margin-top: -5rem;
+}
+
+.card figcaption {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.project-card {
+  padding-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  object-fit: cover !important;
+  transform: scale(1.05);
+}
+
+.contact-hero {
+  background: var(--contact-hero) center no-repeat;
+  background-size: contain;
+  background-color: #170944;
+}
+.contact-card {
+  background-color: white;
+}
+.contact-card p,
+.contact-card a {
+  margin-top: 0rem;
+  color: #000942;
+  font-size: 1.5rem;
+}
+.container li {
+  list-style: none;
+  justify-content: center;
+  margin: 2rem;
+}
+.container li:hover {
+  text-decoration: underline;
+  color: #000942;
+}
+.link {
+  width: 5rem;
+  border: #000942;
+}
+.instagram-logo,
+.tiktok-logo,
+.github-logo,
+.linkedin-logo {
+  height: 2rem;
+  width: 8rem;
+}
+
+.instagram-logo {
+  background: url(img/instagram-logo.png) center no-repeat;
+  background-size: contain;
+  margin-top: -1rem;
+}
+.tiktok-logo {
+  background: url(img/tiktok-logo.png) center no-repeat;
+  background-size: contain;
+  margin-top: 1rem;
+}
+.github-logo {
+  background: url(img/github-alternative-logo.svg) center no-repeat;
+  background-size: contain;
+  margin-top: 1rem;
+}
+.linkedin-logo {
+  background: url(img/linkedin-logo.webp) center no-repeat;
+  background-size: contain;
+  margin-top: rem;
+}
+a:hover .instagram-logo,
+.tiktok-logo a:hover,
+.github-logo a:hover,
+.linkedin-logo a:hover {
+  text-decoration: underline;
+}
+footer {
+  height: 55vh;
+  background-color: var(--eduvos-coding-club-secondary-color);
+  color: var(--text-color);
+}
+footer p {
+  margin-top: 1rem;
+  margin-left: 5%;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+footer hr {
+  margin-bottom: 0.5rem;
+}
+footer li {
+  list-style: none;
+  margin: 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.gridded-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+  text-align: start;
+  padding-left: 6%;
+  margin-bottom: 3rem;
+}
+.underline {
+  text-decoration: underline;
+}
+.underline a:hover,
+a:hover .underline {
+  opacity: 80%;
+}
+
+/* EXTRA SMALL (Phones in Portrait Mode) */
+@media screen and (max-width: 575px) {
+  nav {
+    font-size: 0.8rem;
+  }
+  .hero {
+    font-size: 1rem;
+    padding: 0%;
+    padding-top: 4rem;
+  }
+  .hero h1 {
+    padding-bottom: 6rem;
+  }
+  .club-logo-full {
+    margin-top: 5rem;
+  }
+  .card figure {
+    margin-top: -4rem;
+  }
+  .image-modifier img {
+    object-fit: fill;
+  }
+}
+
+@media screen and (max-width: 912px) and (orientation: landscape) {
+  .hero {
+    padding-right: 0rem;
+  }
+  .hero h1 {
+    margin-top: -2rem;
+    font-size: 1.5rem;
+  }
+  .hero .club-logo-full {
+    height: 3rem;
+    margin: 0.5rem;
+  }
+
+  .card img {
+    margin-top: -2rem;
+    object-fit: fill;
+  }
+  .container .card:first-child img {
+    margin-top: 0rem;
+  }
+}
+
+/* SMALL */
+@media screen and (min-width: 576px) {
+  .card {
+    width: min(100%, 350px);
+    height: 90vh;
+  }
+  .card img {
+    height: 60vh;
+  }
+}
+
+/* MEDIUM */
+@media screen and (min-width: 768px) {
+}
+
+/* LARGE */
+@media screen and (min-width: 992px) {
+}
+
+/* XL */
+@media screen and (min-width: 1200px) {
+}

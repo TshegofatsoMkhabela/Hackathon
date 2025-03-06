@@ -271,7 +271,7 @@ Do I need a team for the hackathon?
 
 `;
 
-const API_KEY = "AIzaSyDZWltkD1zPDLe_Hq6Az05ilDmYnNd-Sk4";
+const API_KEY = "AIzaSyAI5vTm1E2qR0CdJfG3A6syn85q_chiSvE";
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({
   model: "gemini-1.5-pro",

@@ -1,36 +1,28 @@
 <!DOCTYPE html>
-<html lang="en-ZA">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
+    <title>AI Chat Assistant</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
     />
-    <meta
-      name="author"
-      content="Eduvos Coding Club | Midrand | Tshegofatso Mkhabela"
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
     />
-    <meta
-      name="description"
-      content="Eduvos Coding Club Website, Join the Eduvos Coding Club, a vibrant community for Eduvos students and university learners passionate about coding, software development, and tech innovation. Learn, collaborate, and grow your coding skills with like-minded peers!"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
-    <meta
-      name="keywords"
-      content="Eduvos Coding Club, coding community, learn programming, university coding club, student developers, coding events, coding bootcamp, software development, programming for beginners, coding workshops, tech community, Eduvos students, computer science, coding mentorship, coding club, coding opportunities"
-    />
-    <title>Eduvos Coding Club | Midrand | Bringing Code to Life</title>
     <link
       rel="stylesheet"
       href="style.css"
-    />
-    <link
-      rel="shortcut icon"
-      href="img/coding-club-logo-reduced.png"
-      type="image/x-icon"
     />
   </head>
   <body>
@@ -64,7 +56,10 @@
       <div class="container rounded-top-radius">
         <h2 id="events">Events</h2>
         <article>
-          <article class="card">
+          <article
+            class="card"
+            id="event-card1"
+          >
             <figure class="image-modifier">
               <img
                 src="img/banner-3.jpg"
@@ -85,6 +80,7 @@
           <article
             class="card"
             class="image-modifier"
+            id="event-card2"
           >
             <figure class="image-modifier">
               <img
@@ -127,7 +123,10 @@
       <div class="container">
         <h2 id="projects">Projects</h2>
         <article>
-          <article class="card">
+          <article
+            class="card"
+            id="project-card1"
+          >
             <figure>
               <img
                 src="img/glitch.jpg"
@@ -145,7 +144,10 @@
               <span class="nowrap">Lerato Dlamini</span>
             </p>
           </article>
-          <article class="card">
+          <article
+            class="card"
+            id="project-card2"
+          >
             <figure>
               <img
                 src="img/glitch.jpg"
@@ -165,6 +167,7 @@
           <article
             class="card"
             class="project-card"
+            id="project-card3"
           >
             <figure>
               <img
@@ -234,24 +237,6 @@
         >
         <h2>Our Team</h2>
         <article>
-          <article class="card">
-            <figure>
-              <img
-                src="img/vusi-kunene-matlou-president.jpeg"
-                alt="vusi-kunene-matlou-profile"
-                title="Vusi Kunene Matlou"
-                class="card-modifier"
-              />
-              <figcaption>President</figcaption>
-              <hr />
-            </figure>
-            <p><strong>Vusi Kunene Matlou</strong></p>
-            <p>
-              As the President of the Coding Club, I am passionate about tech
-              and computer science. I lead our team in exploring new
-              technologies.
-            </p>
-          </article>
           <article class="card">
             <figure>
               <img
@@ -518,6 +503,56 @@
         <a href=""><span class="underline">Back to top</span></a>
       </p>
     </footer>
-    <script src="main.js"></script>
+    <section class="chat-window text-color">
+      <button class="close"><strong>X</strong></button>
+      <div class="chat">
+        <div class="model">
+          <p>
+            <img
+              src="img/coding-club-logo-reduced.png"
+              alt="club"
+              height="25px"
+              width="25px"
+              class="in-line"
+            />
+            Hi, how can I help you?
+          </p>
+        </div>
+      </div>
+      <div class="input-area">
+        <input
+          placeholder="Ask me anything..."
+          type="text"
+          class="text-color"
+        />
+        <button>
+          <img
+            src="img/send-icon.png"
+            alt="send"
+          />
+        </button>
+      </div>
+    </section>
+
+    <div class="chat-button">
+      <img
+        src="img/chat-icon.png"
+        alt="start chat"
+      />
+    </div>
+    <div class="overlay"></div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+
+    <script
+      type="module"
+      src="main.js"
+    ></script>
   </body>
 </html>

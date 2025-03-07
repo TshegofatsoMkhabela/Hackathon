@@ -597,9 +597,6 @@ body.chat-open {
   .hero {
     padding-right: 12rem !important;
   }
-  .chat-button {
-    display: none;
-  }
 }
 
 /* MEDIUM */

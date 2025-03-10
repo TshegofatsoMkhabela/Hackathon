@@ -428,6 +428,7 @@ body.chat-open {
 }
 
 .chat-button {
+  display: none;
   position: fixed;
   bottom: 60px;
   right: 20px;

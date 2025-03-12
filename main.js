@@ -254,7 +254,7 @@ Do I need a team for the hackathon?
 You can form a team before registration or be assigned to one randomly.
 `;
 
-const API_KEY = "AIzaSyAI5vTm1E2qR0CdJfG3A6syn85q_chiSvE";
+const API_KEY = "none";
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({
   model: "gemini-1.5-pro",
